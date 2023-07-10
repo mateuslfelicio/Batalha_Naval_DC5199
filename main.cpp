@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <locale.h>
 #define M 12
 #if defined(_WIN32)
     #define Plataforma 'w'
@@ -380,6 +381,7 @@ void display_navios(int navio[4], int navioD[4])
 
 int main()
 {
+    setlocale(LC_ALL,"Portuguese_Brazil");
     srand(time(NULL));
     int pontosJ1 = 0, pontosJ2 = 0, jogadas, jogar = 1 , dificuldade, navios[4],naviosD[4] = {0};
     char tabuleiroJ1[M][M], tabuleiroB1[M][M];
