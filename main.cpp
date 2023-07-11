@@ -50,7 +50,7 @@ int verifica_em_volta (char tabuleiro[M][M], int linha, int coluna)
 }
 
 void altera_destruidos(char tabuleiro[M][M], int linha, int coluna, int l1, int c1, int l2, int c2, int l3, int c3)
-{
+{ //altera as embarcações totalemente destruidas para melhor vizualização
     tabuleiro[linha][coluna] = tabuleiro[l1][c1] = tabuleiro[l2][c2] = tabuleiro[l3][c3] = '=';
 }
 
