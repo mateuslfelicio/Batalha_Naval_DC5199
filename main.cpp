@@ -414,7 +414,7 @@ int main()
         limpa();
         distribui(tabuleiroJ1, dificuldade-1,navios);
         preenche_tabuleiro(tabuleiroB1);
-        imprimetabuleiro(tabuleiroJ1);
+        imprimetabuleiro(tabuleiroB1);
         jogadas = 0;
         while(jogadas < 100){
             pontosJ1 += jogada(tabuleiroJ1,tabuleiroB1,jogadas,naviosD);
